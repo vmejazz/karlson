@@ -1,0 +1,120 @@
+.main-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  padding: 0 110px;
+
+  color: rgb(43, 43, 43);
+}
+
+.main-info__header-list {
+  @include list-reset();
+
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.main-info__header-item {
+  position: relative;
+
+  min-width: 290px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(43, 43, 43);
+}
+
+.info-card__icon {
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.info-card__title {
+  @include MP-reset();
+
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.info-card__description {
+  @include MP-reset();
+
+  padding: 0 50px;
+
+  font-family: "MinionPro-MediumSubh";
+  text-align: center;
+  font-style: italic;
+}
+
+.main-info__content {
+  margin-bottom: 80px;
+
+  text-align: center;
+}
+
+.main-info__title {
+  @include MP-reset();
+
+  position: relative;
+
+  margin-bottom: 80px;
+  padding-left: 20px;
+
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    // left: 455px;
+    left: 50%;
+
+    width: 50px;
+    height: 1px;
+
+    border-bottom: 1px solid black;
+    transform: translateX(-50%);
+    // transform: translateX(-25px);
+    transform-origin: center;
+  }
+}
+
+.main-info__description {
+  @include MP-reset();
+
+  display: inline-block;
+  max-width: 470px;
+  margin-bottom: 80px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "MinionPro-It";
+  text-align: center;
+  font-style: italic;
+}
+
+
+.main-info__footer-list {
+  @include list-reset();
+
+  display: flex;
+  justify-content: space-between;
+}

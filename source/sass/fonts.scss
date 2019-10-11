@@ -1,0 +1,31 @@
+@font-face {
+  font-weight: 400;
+  font-family: "P22UndergroundCYPro-Light";
+  font-style: normal;
+
+  font-display: swap;
+  src: local("P22UndergroundCYPro-Light"),
+  url("../fonts/p22underground.woff") format("woff"),
+  url("../fonts/P22UndergroundCYPro-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "MinionPro-MediumSubh";
+  font-style: normal;
+
+  font-display: swap;
+  src: local("MinionPro-MediumSubh"),
+  url("../fonts/MinionPro.woff") format("woff"),
+  url("../fonts/MinionPro-MediumSubh.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "MinionPro-It";
+  font-style: italic;
+
+  font-display: swap;
+  src: local("MinionPro-It"),
+  url("../fonts/MinionPro-It.woff") format("woff"),;
+}

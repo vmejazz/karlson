@@ -1,0 +1,52 @@
+.main-video {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  text-align: center;
+}
+
+.main-video__title {
+  @include MP-reset();
+
+  position: relative;
+
+  margin-bottom: 80px;
+  padding-left: 20px;
+
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    // left: 455px;
+    left: 50%;
+
+    width: 50px;
+    height: 1px;
+
+    border-bottom: 1px solid black;
+    transform: translateX(-50%);
+    // transform: translateX(-25px);
+    transform-origin: center;
+  }
+}
+
+.main-video__description {
+  @include MP-reset();
+
+  display: inline-block;
+  max-width: 470px;
+  margin-bottom: 40px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "MinionPro-It";
+  text-align: center;
+  font-style: italic;
+}
