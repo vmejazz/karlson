@@ -14,7 +14,10 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
+// var posthtml = require('posthtml');
+
 var include = require("posthtml-include");
+// var include = require("gulp-posthtml");
 var del = require("del");
 var cheerio = require("gulp-cheerio");
 var htmlmin = require("gulp-htmlmin");
@@ -93,11 +96,17 @@ gulp.task("sprite", function(){
     .pipe(gulp.dest("build/img"));
 });
 
+// gulp.task("html", function(){
+//   return gulp.src("source/*.html")
+//     .pipe(posthtml([
+//       include()
+//     ]))
+//     .pipe(gulp.dest("build"));
+// });
+
 gulp.task("html", function(){
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
+    .pipe(posthtml( {plugins: [include() ]}))
     .pipe(gulp.dest("build"));
 });
 

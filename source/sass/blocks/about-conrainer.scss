@@ -1,0 +1,10 @@
+.about-slider {
+  @include list-reset();
+}
+
+.about-slider__item {
+  &--hide {
+    display: none;
+ 
+ }
+}
