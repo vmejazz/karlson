@@ -4,9 +4,11 @@
   width: 100%;
   max-width: none;
   height: 786px;
-  // background-image: url("../../img/3.jpg");
 
-  // background-repeat: no-repeat;
+  &--all {
+    background-image: url("../../img/3.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .main-about__container {
