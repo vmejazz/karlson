@@ -1,0 +1,14 @@
+.menu-carte {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 110px;
+
+  & iframe {
+    width: 100%;
+    min-height: 800px;
+
+    & body {
+      background-color: #ffffff;
+    }
+  }
+}
