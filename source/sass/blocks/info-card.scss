@@ -60,4 +60,8 @@
   font-family: "MinionPro-MediumSubh";
   text-align: center;
   font-style: italic;
+
+  & a {
+    text-decoration: underline;
+  }
 }

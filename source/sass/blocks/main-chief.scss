@@ -12,9 +12,9 @@
   width: 1900px;
   height: 733px;
 
-  background-image: url("../../img/chief.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url("../../img/chief.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 
 .main-chief__card {
@@ -26,6 +26,7 @@
   height: 400px;
 
   background-color: #ffffff;
+  transform: translateX(-20%);
 }
 
 .main-chief__title {

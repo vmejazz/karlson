@@ -1,70 +1,78 @@
-/*************************************************************
-  HEADER
-**************************************************************/
-.parallax-header {
-  position: relative;
-  z-index: -1;
+.parallax-window {
+  min-height: 400px;
 
-  width: 100%;
-  min-height: 100vh;
-
-  transform-style: inherit;
-}
-
-.parallax-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -2;
-
-  display: block;
-  min-height: 100%;
-
-  background: url(../../img/1.jpg) top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateZ(-1px) scale(2.1);
+  background: transparent;
 }
 
 
-/*************************************************************
-  SECTIONS
-**************************************************************/
-.parallax-section {
-  position: relative;
-  position: relative;
 
-  width: 100%;
-  min-height: 100vh;
+// /*************************************************************
+//   HEADER
+// **************************************************************/
+// .parallax-header {
+//   position: relative;
+//   z-index: -1;
 
-  transform-style: inherit;
-}
+//   width: 100%;
+//   min-height: 100vh;
 
-.parallax-.section1 {
-  z-index: 1;
+//   transform-style: inherit;
+// }
 
-  background: #fafafa;
-  box-shadow: 0 0 20px #333333;
-}
+// .parallax-header::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   z-index: -2;
 
-.parallax-.section2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+//   display: block;
+//   min-height: 100%;
 
-  display: block;
-  // background: url(https://picsum.photos/g/1920/1080?random) top center;
+//   background: url(../../img/1.jpg) top center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   transform: translateZ(-1px) scale(2.1);
+// }
 
-  background-size: cover;
-  transform: translateZ(-0.5px) scale(1.6);
-}
+
+// /*************************************************************
+//   SECTIONS
+// **************************************************************/
+// .parallax-section {
+//   position: relative;
+//   position: relative;
+
+//   width: 100%;
+//   min-height: 100vh;
+
+//   transform-style: inherit;
+// }
+
+// .parallax-.section1 {
+//   z-index: 1;
+
+//   background: #fafafa;
+//   box-shadow: 0 0 20px #333333;
+// }
+
+// .parallax-.section2::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   z-index: -1;
+
+//   display: block;
+//   // background: url(https://picsum.photos/g/1920/1080?random) top center;
+
+//   background-size: cover;
+//   transform: translateZ(-0.5px) scale(1.6);
+// }
 
 /*************************************************************
   HEADINGS

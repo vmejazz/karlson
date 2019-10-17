@@ -1,0 +1,173 @@
+.modal-img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 25;
+
+  display: block;
+  // width: 100vh;
+  // height: 100vh;
+
+  background-color: #ffffff;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.modal-img__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 25;
+
+
+
+  &::before {
+    content: "";
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #ffffff;
+    opacity: 0.9;
+  }
+}
+
+.modal-img__container {
+  position: relative;
+
+  display: flex;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 110px;
+}
+
+.modal-img__button-close {
+  @include btn-reset();
+
+  position: absolute;
+  top: -40px;
+  right: 0;
+
+  color: transparent;
+
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 7px;
+    z-index: 2;
+
+    width: 20px;
+    height: 20px;
+
+    border-top: 4px solid rgb(43, 43, 43);
+    border-right: 4px solid rgb(43, 43, 43);
+    border-bottom-right-radius: 2px;
+    transform: rotate(-45deg) ;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 7px;
+    z-index: 2;
+
+    width: 20px;
+    height: 20px;
+
+    border-bottom: 4px solid rgb(43, 43, 43);
+    border-left: 4px solid rgb(43, 43, 43);
+    transform: rotate(-45deg) ;
+  }
+}
+
+.modal-img__slider {
+  position: relative;
+
+  width: 70%;
+  height: 100%;
+}
+
+.modal-img__description {
+  width: 30%;
+}
+
+.modal-img__list {
+  @include list-reset()
+
+  position: relative;
+
+  padding: 0 40px;
+}
+
+.modal-img__item {
+  width: 100%;
+  // height: 100%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.modal-img__button {
+  @include btn-reset();
+
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+
+  color: transparent;
+
+  outline: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    z-index: 2;
+
+    width: 20px;
+    height: 20px;
+
+    border-top: 4px solid rgb(43, 43, 43);
+    border-left: 4px solid rgb(43, 43, 43);
+    border-bottom-right-radius: 2px;
+    transform: rotate(-45deg) ;
+  }
+
+  &--next {
+    right: 0;
+
+    &::before {
+      border: none;
+      border-right: 4px solid rgb(43, 43, 43);
+      border-bottom: 4px solid rgb(43, 43, 43);
+    }
+  }
+}
+
+.modal-img__description {
+  @include MP-reset();
+
+  font-size: 26px;
+  line-height: 1.4em;
+
+  & p {
+    @include MP-reset();
+  }
+}

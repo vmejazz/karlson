@@ -51,7 +51,7 @@ gulp.task("server", function () {
       var gzip = compression();
       gzip(req,res,next);
     },
-    https: true
+    https: false
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
