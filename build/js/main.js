@@ -5,7 +5,7 @@ var mySwiper = new Swiper ('.photo-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: 'photo-slider__next',
+    nextEl: '.photo-slider__next',
     prevEl: '.photo-slider__prev',
   },
 
@@ -30,7 +30,7 @@ var mySwiper = new Swiper ('.carte-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: 'carte-slider__next',
+    nextEl: '.carte-slider__next',
     prevEl: '.carte-slider__prev',
   },
 

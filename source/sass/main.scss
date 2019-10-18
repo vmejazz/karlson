@@ -65,6 +65,10 @@ a {
 
 .page-main {
   margin-top: 200px;
+
+  @media (max-width: $desktop) {
+    margin-top: 0;
+  }
 }
 
 // .modal-open {

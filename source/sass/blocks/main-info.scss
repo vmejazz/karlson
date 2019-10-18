@@ -6,10 +6,21 @@
   padding: 0 110px;
 
   color: rgb(43, 43, 43);
+
+  @media (max-width: $desktop) {
+    max-width: none;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
 }
 
 .main-info__header {
   padding-left: 50px;
+
+  @media (max-width: $desktop) {
+    padding-left: 0;
+  }
 }
 
 .main-info__header-list {
@@ -18,6 +29,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
+
+  @media (max-width: $desktop) {
+    flex-direction: column;
+  }
 }
 
 .main-info__header-item {
@@ -28,6 +43,10 @@
   font-size: 14px;
   line-height: 18px;
   color: rgb(43, 43, 43);
+
+  @media (max-width: $desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .main-info__content {
@@ -79,6 +98,10 @@
   font-family: "MinionPro-It";
   text-align: center;
   font-style: italic;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 
@@ -87,4 +110,8 @@
 
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $desktop) {
+    flex-direction: column;
+  }
 }

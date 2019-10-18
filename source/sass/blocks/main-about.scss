@@ -20,6 +20,11 @@
   height: 100%;
   margin: 0 auto;
   padding: 0 110px;
+
+  @media (max-width: $desktop) {
+    max-width: none;
+    padding: 0 0;
+  }
 }
 
 .about-content {
@@ -32,6 +37,14 @@
   padding: 0 30px;
 
   background-color: #ffffff;
+
+  @media (max-width: $desktop) {
+    width: 100%;
+    max-width: none;
+    padding: 0 10px;
+
+    border-bottom: 1px solid gray;
+  }
 }
 
 .about__title {
@@ -61,6 +74,10 @@
 
   font-size: 15px;
   line-height: 18px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .about__link {

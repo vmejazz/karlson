@@ -9,17 +9,31 @@
   background-color: #ffffff;
   // border-bottom: 1px solid rgba(96, 94, 94, 0.68);
   border-bottom: 1px solid #979595;
+  // @media (max-width: $desktop) {
+  //   padding: 0 10px;
+  // }
+
+  @media (max-width: $desktop) {
+    position: static;
+
+    margin-top: 0;
+  }
 }
 
 .page-header__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 150px;
+
+  @media (max-width: $desktop) {
+    max-width: none;
+    padding: 0 10px;
+  }
 }
 
 .page-header__top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 25px;
 }
@@ -32,6 +46,17 @@
     display: block;
 
     color: transparent;
+  }
+
+  @media (max-width: $desktop) {
+    width: 70px;
+    height: 70px;
+    margin: 0 20px;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -47,6 +72,14 @@
   text-transform: uppercase;
 
   border: 1px solid rgba(96, 94, 94, 0.68);
+
+  @media (max-width: $desktop) {
+    width: 130px;
+    height: 37px;
+
+    font-size: 11px;
+  }
+
 
   &:hover,
   &:focus {
@@ -64,11 +97,21 @@
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.25em;
   font-family: "MinionPro-MediumSubh";
   color: black;
   font-style: normal;
   letter-spacing: 2.8px;
+
+  @media (max-width: $desktop) {
+    align-items: flex-end;
+    width: 120px;
+    padding: 0;
+    // padding-left: 10px;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .page-header__phone {
@@ -82,6 +125,10 @@
 
   font-style: italic;
   letter-spacing: 0.15em;
+
+  @media (max-width: $desktop) {
+    text-align: end;
+  }
 }
 
 .page-header__bottom {

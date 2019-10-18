@@ -35,6 +35,20 @@
   &--note {
     left: 20px;
   }
+
+  @media (max-width: $desktop) {
+    &--dialog {
+      left: 30px;
+    }
+
+    &--placeholder {
+      left: 30px;
+    }
+
+    &--note {
+      left: 30px;
+    }
+  }
 }
 
 .info-card__title {
@@ -50,6 +64,10 @@
   & a {
     text-decoration: underline;
   }
+
+  @media (max-width: $desktop) {
+    margin-bottom: 5px;
+  }
 }
 
 .info-card__description {
@@ -63,5 +81,9 @@
 
   & a {
     text-decoration: underline;
+  }
+
+  @media (max-width: $desktop) {
+    margin-bottom: 40px;
   }
 }

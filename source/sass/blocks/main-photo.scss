@@ -39,6 +39,10 @@
     // transform: translateX(-25px);
     transform-origin: center;
   }
+
+  @media (max-width: $desktop) {
+    font-size: 26px;
+  }
 }
 
 .main-photo__description {
@@ -55,6 +59,12 @@
   font-family: "MinionPro-It";
   text-align: center;
   font-style: italic;
+
+  @media (max-width: $desktop) {
+    padding: 0 10px;
+
+    font-size: 17px;
+  }
 }
 
 .photo-slider {
@@ -90,6 +100,8 @@
   display: block;
   width: 100%;
   height: 100%;
+
+  cursor: zoom-in;
 
   & img {
     width: 100%;
