@@ -33,9 +33,13 @@
 
 .page-header__top {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 25px;
+
+  @media (max-width: $desktop) {
+    justify-content: center;
+  }
 }
 
 .page-header__main-logo {
