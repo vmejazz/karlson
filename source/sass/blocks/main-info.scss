@@ -32,6 +32,7 @@
 
   @media (max-width: $desktop) {
     flex-direction: column;
+    margin-bottom: 30px;
   }
 }
 
@@ -83,6 +84,10 @@
     transform: translateX(-50%);
     // transform: translateX(-25px);
     transform-origin: center;
+  }
+
+  @media (max-width: $desktop) {
+    margin-bottom: 30px;
   }
 }
 
