@@ -70,6 +70,8 @@
   background-color: rgba(255, 255, 255, 1);
   border: solid transparent 1px;
 
+  transition-duration: 0.4s;
+
   &:hover,
   &:focus {
     color: #ffffff;
