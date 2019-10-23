@@ -23,7 +23,6 @@
   <link rel="shortcut icon" href="https://static.parastorage.com/client/pfavico.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="https://static.parastorage.com/client/pfavico.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.min.css">
-  <script src="./js/modernizr-custom.js"></script>
 </head>
 
 <body>
@@ -398,13 +397,13 @@ s
             Бронирование столика в ресторане
           </div>
           <form class="main-order__form form-order" action="submit">
-            <input class="form-order__input form-order__input--first-name" type="text" placeholder="Имя">
-            <input class="form-order__input form-order__input--second-name" type="text" placeholder="Фамилия">
-            <input class="form-order__input form-order__input--email" type="email" placeholder="Эл. почта">
-            <input class="form-order__input form-order__input--phone-number" type="text" placeholder="Телефон">
-            <input class="form-order__input form-order__input--date" type="text" placeholder="Дата">
+            <input class="form-order__input form-order__input--first-name" type="text" placeholder="Имя" required>
+            <input class="form-order__input form-order__input--second-name" type="text" placeholder="Фамилия" required>
+            <input class="form-order__input form-order__input--email" type="email" placeholder="Эл. почта" required>
+            <input class="form-order__input form-order__input--phone-number" type="text" placeholder="Телефон" required>
+            <input class="form-order__input form-order__input--date" type="text" placeholder="Дата" required>
             <!-- <input class="form-order__input form-order__input--time" type="datetime" placeholder="Выберите время"> -->
-            <select class="form-order__input form-order__input--time" name="form-order__input--time" id="form-order__input--name">
+            <select class="form-order__input form-order__input--time" name="form-order__input--time" id="form-order__input--name" required>
               <option selected value="" default="" disabled>Выберите время</option>
               <option value="12:00">12:00</option>
               <option value="12:30">12:30</option>
@@ -433,7 +432,7 @@ s
               <option value="00:00">00:00</option>
             </select>
             <!-- <input class="form-order__input form-order__input--guest" type="text" placeholder="Количество гостей"> -->
-            <select class="form-order__input form-order__input--guest" name="form-order__input--guest" id="form-order__input--guest">
+            <select class="form-order__input form-order__input--guest" name="form-order__input--guest" id="form-order__input--guest" required>
               <option selected="" value="" default="" disabled>Количество гостей</option>
               <option value="4">4</option>
               <option value="5">5</option>
@@ -556,7 +555,6 @@ s
   <script src="./js/jquery.min.js"></script>
   <script src="./js/datepicker.min.js"></script>
   <script src="./js/datepickerInit.js"></script>
-  <script src="./js/main.js"></script>
   <!--
   <script src="./js/modal.js"></script>
   <script src="./js/metro-picker.js"></script>
@@ -566,8 +564,9 @@ s
   <script src="./js/jquery.json-serialize.min.js"></script>
   <script src="./js/validate-us.min.js"></script>
   <script src="./js/forms.js"></script> -->
-  <script src="./js/scrollAnchor.js"></script>
-  <script src="./js/scrollUp.js"></script>
+  <!-- <script src="./js/scrollAnchor.js"></script>
+  <script src="./js/scrollUp.js"></script> -->
+  <!-- <script src="./js/validate.js"></script> -->
 </body>
 
 </html>

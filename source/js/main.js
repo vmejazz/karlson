@@ -1,3 +1,7 @@
+/**********************************************
+ *  Инициализация фото-слайдера
+ ********************************************/
+
 var mySwiper = new Swiper ('.photo-slider', {
   // Optional parameters
   direction: 'horizontal',
@@ -8,6 +12,10 @@ var mySwiper = new Swiper ('.photo-slider', {
     nextEl: '.photo-slider__next',
     prevEl: '.photo-slider__prev',
   },
+
+  // fadeEffect: {
+  //   crossFade: true
+  // },
 
   slidesPerView: 3,
   // spaceBetween: 10,
@@ -22,6 +30,9 @@ var mySwiper = new Swiper ('.photo-slider', {
   }
 })
 
+/**********************************************
+ *  Инициализация меню-слайдера
+ ********************************************/
 
 var mySwiper = new Swiper ('.carte-slider', {
   // Optional parameters
