@@ -38,6 +38,8 @@ const openModal = (target) => {
   const newSource = target.src;
   modalBigImage.src = newSource;
   modalImg.classList.remove('modal-img--hide');
+  modalImg.classList.remove('soft-hide');
+  modalImg.classList.add('soft-show');
   getSliderList(target);
 };
 
@@ -46,9 +48,15 @@ photoList.addEventListener('click', (evt) => {
   openModal(evt.target);
 })
 
+const setHideClass = () => {
+  modalImg.classList.add('modal-img--hide');
+}
+
 closeModalButton.addEventListener('click', (evt) => {
   evt.preventDefault();
-  modalImg.classList.add('modal-img--hide');
+  modalImg.classList.remove('soft-show');
+  modalImg.classList.add('soft-hide');
+  setTimeout(setHideClass, 500);
 })
 
 carteList.addEventListener('click', (evt) => {

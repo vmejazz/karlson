@@ -1,0 +1,29 @@
+@keyframes soft-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes soft-hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.soft-show {
+  animation-name: soft-show;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
+
+.soft-hide {
+  animation-name: soft-hide;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}

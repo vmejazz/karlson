@@ -11,6 +11,7 @@ var mySwiper = new Swiper ('.photo-slider', {
   navigation: {
     nextEl: '.photo-slider__next',
     prevEl: '.photo-slider__prev',
+    disabledClass: 'disabled',
   },
 
   // fadeEffect: {
@@ -43,6 +44,7 @@ var mySwiper = new Swiper ('.carte-slider', {
   navigation: {
     nextEl: '.carte-slider__next',
     prevEl: '.carte-slider__prev',
+    disabledClass: 'disabled',
   },
 
   slidesPerView: 3,
