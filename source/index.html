@@ -23,6 +23,7 @@
   <link rel="shortcut icon" href="https://static.parastorage.com/client/pfavico.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="https://static.parastorage.com/client/pfavico.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/picturefill.min.js"></script>
   <!-- <script src="./js/modernizr-custom.js"></script> -->
 </head>
 
@@ -327,7 +328,14 @@ s
           Заказать столик
         </a>
         <a class="page-header__main-logo" href="./index.html">
-          <img src="./img/main-logo.png" alt="Рестаран-Карлсон. Главная" width="90" height="90">
+          <picture>
+            <source type="image/webp"
+                    srcset="./img/main-logo.webp">
+            <img class="product-card__image" width="90" height="90"
+                    src="./img/main-logo.png"
+                    alt="Рестаран-Карлсон. Главная">
+          </picture>
+          <!-- <img src="./img/main-logo.webp" alt="Рестаран-Карлсон. Главная" width="90" height="90"> -->
         </a>
         <div class="page-header__feedback">
           <a class="page-header__phone" href="tel:+7 915 286 06 28" data-content="+7 915 286 06 28" data-type="phone">
@@ -389,7 +397,7 @@ s
   <!-- MAIN START -->
   <main class="page-main">
     <div class="main-container">
-      <section class="main-descriptiong" id="main-description">
+      <section class="main-description" id="main-description">
         <div class="main-description__parallax-window">
           <div class="main-description__container">
             <h1 class="main-description__title visually-hidden">
@@ -696,7 +704,8 @@ s
           Необходимая информация и координаты для тех, кто собирается посетить ресторан Карлсон. Удобная карта, прямой телефон ресторана и службы доставки.
         </div>
         <div class="main-contacts__map" width="980" height="500">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.7652673277275!2d37.63338054149817!3d55.744092837036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afbbd5d04a1%3A0xf9ffbea0bd42dbfc!2z0JrQsNGA0LvRgdC-0L0!5e0!3m2!1sru!2sru!4v1570708061294!5m2!1sru!2sru" width="1400" height="345" frameborder="0" allowfullscreen=""></iframe>
+          <!-- <div class="main-contacts__map-iframe" id="map" style="height: 100%;"></div> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.7652673277275!2d37.63338054149817!3d55.744092837036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afbbd5d04a1%3A0xf9ffbea0bd42dbfc!2z0JrQsNGA0LvRgdC-0L0!5e0!3m2!1sru!2sru!4v1570708061294!5m2!1sru!2sru" width="1400" height="345" frameborder="0" allowfullscreen=""></iframe>
         </div>
       </section>
       <section class="contact-info">
@@ -830,7 +839,7 @@ s
         </ul>
       </div>
       <p class="page-footer__copyright">
-        2019 LandingHeroes
+        © 2018 KARLSON
       </p>
     </div>
   </footer>
@@ -840,6 +849,9 @@ s
   <script src="./js/jquery.spincrement.min.js"></script>
   <script src="./js/bodyScroll.js"></script>
 -->
+  <script src="./js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzD7XQVmqtivRNz-kzoFH9VFTncUT2K6Y&callback=initMap"></script>
+
   <script src="./js/jquery.min.js"></script>
   <script src="./js/parallax.min.js"></script>
   <script src="./js/parallaxInit.js"></script>

@@ -55,21 +55,30 @@
   font-style: italic;
 }
 
+.main-contacts__list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
 .main-contacts__list {
   @include list-reset();
 
   display: flex;
+  justify-content: space-between;
   width: 980px;
   margin-top: 40px;
   margin-right: auto;
   margin-bottom: 40px;
   margin-left: auto;
+  padding: 0 25px;
 }
 
 .main-contacts__item {
   position: relative;
+  // min-width: 290px;
 
-  min-width: 290px;
+  width: 33%;
 
   font-size: 14px;
   line-height: 18px;

@@ -2,6 +2,7 @@
   width: 100%;
   max-width: none;
   height: 610px;
+
   // margin-top: 200px;
   // background-image: url(../../img/1.jpg);
 
@@ -10,12 +11,17 @@
   // background-size: 100%;
 }
 
+.main-description__parallax-window {
+  max-height: 615px;
+}
+
 .main-description__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
+  // height: 600px;
 }
 
 .main-description__card {
@@ -26,7 +32,7 @@
   align-content: center;
   width: 400px;
   height: 240px;
-  margin-top: 180px;
+  margin-top: 170px;
   margin-bottom: 40px;
 
   background-color: #ffffff;

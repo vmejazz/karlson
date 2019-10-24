@@ -38,8 +38,9 @@
 
 .main-info__header-item {
   position: relative;
+  // min-width: 290px;
 
-  min-width: 290px;
+  width: 33%;
 
   font-size: 14px;
   line-height: 18px;
