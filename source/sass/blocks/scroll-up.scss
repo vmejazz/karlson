@@ -56,4 +56,10 @@
     border-bottom-right-radius: 2px;
     transform: rotate(-45deg);
   }
+
+  @media (max-width: $desktop) {
+    &::before {
+      left: 0;
+    }
+  }
 }

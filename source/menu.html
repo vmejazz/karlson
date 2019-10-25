@@ -318,14 +318,19 @@
   </div>
   <!-- HEADER START -->
   <header class="page-header">
-    <div class="container page-header__container">
+    <div class="page-header__container">
       <div class="page-header__top">
         <a class="page-header__button" href="./order.html">
           Заказать столик
         </a>
         <a class="page-header__main-logo" href="./index.html">
-          <img src="./img/main-logo.png" alt="Рестаран-Карлсон. Главная" width="90" height="90">
-        </a>
+          <picture>
+            <source type="image/webp"
+                    srcset="./img/main-logo.webp">
+            <img class="product-card__image" width="90" height="90"
+                    src="./img/main-logo.png"
+                    alt="Рестаран-Карлсон. Главная">
+          </picture>        </a>
         <div class="page-header__feedback">
           <a class="page-header__phone" href="tel:+7 915 286 06 28" data-content="+7 915 286 06 28" data-type="phone">
             +7 (915) 286 06 28

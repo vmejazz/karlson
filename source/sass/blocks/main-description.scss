@@ -15,6 +15,10 @@
   max-height: 615px;
 
   background: transparent;
+
+  @media (max-width: $desktop) {
+    max-height: 630px;
+  }
 }
 
 .main-description__container {

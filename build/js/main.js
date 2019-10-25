@@ -51,7 +51,7 @@ var mySwiper = new Swiper ('.carte-slider', {
     disabledClass: 'disabled',
   },
 
-  slidesPerView: 3,
+  slidesPerView: 1,
   // spaceBetween: 10,
 
   breakpointsInverse: true,

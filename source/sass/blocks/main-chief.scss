@@ -27,6 +27,14 @@
 
   background-color: #ffffff;
   transform: translateX(-20%);
+
+  @media (max-width: $desktop) {
+    bottom: 120px;
+    left: 65px;
+
+    width: 90%;
+    height: 520px;
+  }
 }
 
 .main-chief__title {
@@ -58,6 +66,10 @@
     // transform: translateX(-25px);
     transform-origin: center;
   }
+
+  @media (max-width: $desktop) {
+    font-size: 27px;
+  }
 }
 
 .main-chief__description {
@@ -72,4 +84,8 @@
   font-family: "MinionPro-It";
   text-align: center;
   font-style: italic;
+
+  @media (max-width: $desktop) {
+    padding: 0 10px;
+  }
 }

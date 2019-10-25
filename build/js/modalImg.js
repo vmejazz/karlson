@@ -7,6 +7,15 @@ const modalBigImage = modalImg.querySelector('img');
 let arraySrc = [];
 
 const ESC_KEYCODE = 27;
+const WIDTH_FOR_DESKTOP = 770;
+
+//      Проверяем ширину экрана
+const checkDisplayWidth = () => {
+
+    const widthUser = window.screen.width;
+    return checked = (widthUser >= WIDTH_FOR_DESKTOP) ? true : false;
+
+}
 
 //      Получаем массив ссылок на картинки
 const getArrayImage = (list) => {
@@ -35,13 +44,15 @@ const checkModal = () => {
 
 //      Открываем модальное окно
 const openModal = (target) => {
-  const newSource = target.src;
-  modalBigImage.src = newSource;
-  modalImg.classList.remove('modal-img--hide');
-  modalImg.classList.remove('soft-hide');
-  modalImg.classList.add('soft-show');
-  modalImg.classList.add('noscroll');
-  getSliderList(target);
+  if (checkDisplayWidth()) {          //  проверяем должную ширину экрана
+    const newSource = target.src;
+    modalBigImage.src = newSource;
+    modalImg.classList.remove('modal-img--hide');
+    modalImg.classList.remove('soft-hide');
+    modalImg.classList.add('soft-show');
+    modalImg.classList.add('noscroll');
+    getSliderList(target);
+  };
 };
 
 photoList.addEventListener('click', (evt) => {

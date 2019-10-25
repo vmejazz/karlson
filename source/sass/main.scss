@@ -22,6 +22,10 @@ body {
   // font-family: "MinionPro-MediumSubh";
 
   -webkit-font-smoothing: antialiased;
+
+  @media (max-width: $desktop) {
+    overflow-x: hidden;
+  }
 }
 
 a {

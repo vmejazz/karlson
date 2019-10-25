@@ -34,7 +34,13 @@
   }
 
   @media (max-width: $desktop) {
+    margin-bottom: 18px;
     padding: 0;
+
+    line-height: 1.6em;
+
+    border-bottom: 1px solid gray;
+
 
     &:last-child {
       padding: 0;

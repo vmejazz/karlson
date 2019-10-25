@@ -2,6 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   width: 540px;
+
+  @media (max-width: $desktop) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .form-order__input {
@@ -20,6 +28,14 @@
 
   &--guest {
     margin-right: 200px;
+  }
+
+  @media (max-width: $desktop) {
+    margin-right: 0;
+    margin-bottom: 20px;
+    &--guest {
+      margin-right: 0;
+    }
   }
 }
 

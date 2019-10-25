@@ -61,6 +61,11 @@
   &--show {
     display: block;
   }
+
+  @media (max-width: $desktop) {
+    width: 100%;
+    height: 70%;
+  }
 }
 
 .requisites__title {

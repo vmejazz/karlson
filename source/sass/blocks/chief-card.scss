@@ -3,6 +3,11 @@
   padding-left: 30px;
 
   text-align: left;
+
+  @media (max-width: $desktop) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .chief-card__title {
