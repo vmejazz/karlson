@@ -86,8 +86,12 @@
 }
 
 .main-contacts__map {
-  margin-bottom: 400px;
+  width: 100%;
+  max-width: none;
+  height: 345px;
+  margin-bottom: 80px;
 
+  border-bottom: 1px solid rgba(96, 94, 94, 0.68);
   & iframe {
     position: absolute;
     left: 0;
@@ -95,7 +99,30 @@
     width: 100%;
     min-width: none;
 
-    border-bottom: 1px solid rgba(96, 94, 94, 0.68);
-    filter: grayscale(90%);
+    // border-bottom: 1px solid rgba(96, 94, 94, 0.68);
+    // filter: grayscale(90%);
   }
+}
+
+.main-contacts__map-iframe {
+  height: 100%;
+}
+
+.popup-marker {
+  @include MP-reset();
+
+  padding-right: 5px;
+  // width: 100px;
+  padding-left: 5px;
+  // height: 100%;
+
+  text-align: center;
+
+  & p {
+    @include MP-reset();
+  }
+}
+
+.marker__title {
+  @include MP-reset();
 }
