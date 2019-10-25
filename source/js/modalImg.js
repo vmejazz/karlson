@@ -40,6 +40,7 @@ const openModal = (target) => {
   modalImg.classList.remove('modal-img--hide');
   modalImg.classList.remove('soft-hide');
   modalImg.classList.add('soft-show');
+  modalImg.classList.add('noscroll');
   getSliderList(target);
 };
 

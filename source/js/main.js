@@ -18,13 +18,17 @@ var mySwiper = new Swiper ('.photo-slider', {
   //   crossFade: true
   // },
 
-  slidesPerView: 3,
+  slidesPerView: 1,
   // spaceBetween: 10,
 
   breakpointsInverse: true,
   breakpoints: {
     // when window width is >= 320px
-    720: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    1300: {
       slidesPerView: 3,
       spaceBetween: 10
     }
@@ -53,7 +57,11 @@ var mySwiper = new Swiper ('.carte-slider', {
   breakpointsInverse: true,
   breakpoints: {
     // when window width is >= 320px
-    720: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    1300: {
       slidesPerView: 3,
       spaceBetween: 10
     }
