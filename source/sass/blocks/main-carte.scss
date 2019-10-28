@@ -70,6 +70,10 @@
   & a:first-child {
     margin-left: -20px;
   }
+
+  @media (max-width: $desktop) {
+    padding: 0 10px;
+  }
 }
 
 .main-carte__slider {

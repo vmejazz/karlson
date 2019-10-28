@@ -1,0 +1,48 @@
+.ham {
+  width: 50px;
+  height: 50px;
+
+  cursor: pointer;
+
+  transition: transform 400ms;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+
+  fill: none;
+  // stroke: #000000;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-width: 5.5;
+}
+.ham6 .top {
+  stroke-dasharray: 40 172;
+}
+.ham6 .middle {
+  stroke-dasharray: 40 111;
+}
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
+}
+.ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
+}
