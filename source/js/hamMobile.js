@@ -7,7 +7,7 @@ hamButton.addEventListener('click', (evt) => {
 })
 
 const closeMenuAfterLoad = () => {
-  if (window.screen.width <= 400) {
+  if (window.screen.width < 720) {
     mainNavigation.classList.toggle('main-navigation--hide');
   }
 };
