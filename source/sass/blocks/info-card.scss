@@ -20,6 +20,14 @@
 //   font-style: italic;
 // }
 
+.info-card {
+  @media (max-width: $desktop) {
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
+  }
+}
+
 .info-card__icon {
   position: absolute;
   top: -5px;
@@ -37,17 +45,21 @@
   }
 
   @media (max-width: $desktop) {
-    &--dialog {
-      left: 30px;
-    }
+    position: relative;
+    // top: -30px;
+    left: 0;
 
-    &--placeholder {
-      left: 30px;
-    }
+    // &--dialog {
+    //   left: 30px;
+    // }
 
-    &--note {
-      left: 30px;
-    }
+    // &--placeholder {
+    //   left: 30px;
+    // }
+
+    // &--note {
+    //   left: 30px;
+    // }
   }
 }
 
