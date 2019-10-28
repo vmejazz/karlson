@@ -29,11 +29,11 @@
   transform: translateX(-20%);
 
   @media (max-width: $desktop) {
-    bottom: 120px;
-    left: 65px;
+    top: 245px;
+    left: 155px;
 
-    width: 90%;
-    height: 520px;
+    width: 255px;
+    height: 450px;
   }
 }
 
@@ -80,12 +80,25 @@
   margin-bottom: 40px;
 
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.3em;
   font-family: "MinionPro-It";
   text-align: center;
   font-style: italic;
 
   @media (max-width: $desktop) {
     padding: 0 10px;
+
+    line-height: 1.2em;
+  }
+}
+
+.main-chief__parallax-window {
+  @media (max-width: $desktop) {
+    // padding-left: 600px;
+    height: 720px;
+    // position: absolute;
+
+    background-position: -420px 0 !important;
+    // background-size: contain !important;
   }
 }
